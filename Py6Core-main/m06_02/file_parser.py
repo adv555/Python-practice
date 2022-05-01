@@ -84,3 +84,16 @@ def scan(folder: Path) -> None:
 
 if __name__ == '__main__':
     folder_for_scan = sys.argv[1]
+    print(f'Start in folder {folder_for_scan}')
+
+    scan(Path(folder_for_scan))
+    print(f'Images jpeg: {JPEG_IMAGES}')
+    print(f'Images jpg: {JPG_IMAGES}')
+    print(f'Images svg: {SVG_IMAGES}')
+    print(f'Audio mp3: {MP3_AUDIO}')
+    print(f'Archives: {ARCHIVES}')
+
+    print(f'Types of files in folder: {EXTENSIONS}')
+    print(f'Unknown files of types: {UNKNOWN}')
+
+    print(FOLDERS[::-1])
